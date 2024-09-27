@@ -74,4 +74,4 @@ function autoScroll() {
 }
 
 // Chama a função de scroll automático a cada 50ms
-setInterval(autoScroll, 20);
+setInterval(autoScroll, -10);
