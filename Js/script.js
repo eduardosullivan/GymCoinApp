@@ -62,7 +62,7 @@ function autoScroll() {
     // Verifica se o conteúdo é maior que a altura visível
     if (scrollHeight > clientHeight) {
         rankingDiv.scrollBy({
-            top: 3, // Mover para baixo
+            top: 5, // Mover para baixo
             behavior: 'smooth' // Rolagem suave
         });
 
@@ -75,3 +75,25 @@ function autoScroll() {
 
 // Chama a função de scroll automático a cada 50ms
 setInterval(autoScroll, 50);
+
+
+
+
+    // Seleciona o botão e a div com a imagem
+    const button = document.querySelector('.motiv');
+    const gifContainer = document.querySelector('.gif-container');
+
+    // Adiciona um evento de clique ao botão
+    button.addEventListener('click', function() {
+        // Exibe a div
+        gifContainer.style.display = "block";
+        
+        // Aguarda um pequeno intervalo para garantir que o conteúdo seja exibido antes de rolar
+        setTimeout(function() {
+            // Rola a página até o final
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'  // Faz a rolagem suave
+            });
+        }, 100);  // Pequeno atraso para garantir que o conteúdo seja renderizado antes de rolar
+    });

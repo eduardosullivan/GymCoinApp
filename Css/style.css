@@ -165,18 +165,51 @@
   }
 
   .enviar:hover {
-    background-color: var(--fields);
+    background-color: var(--up);
+    color: white;
     padding: 20px;
     width: 350px;
     border-radius: 10px;
     border: none;
     margin-top: 20px;
     cursor: pointer;
+
   }
+
+
+  .motiv {
+      background-color: var(--up);
+      border: none;
+      padding: 20px;
+      color: rgb(0, 0, 0);
+      font-weight: 400;
+      border-radius: 10px;
+      width: 350px;
+      font-size: 15px;
+      cursor: pointer;
+  }
+
+  .motiv:hover {
+    background-color: #ff01c8;
+  }
+.gatinho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.gif {
+  border-radius: 10px;
+  width: 350px;
+  margin-top: 10px;
+}
 
   .adicionar-km {
     display: flex;
     gap: 5px;
+
   }
 
   .controle {
