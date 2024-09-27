@@ -62,7 +62,7 @@ function autoScroll() {
     // Verifica se o conteúdo é maior que a altura visível
     if (scrollHeight > clientHeight) {
         rankingDiv.scrollBy({
-            top: 1, // Mover para baixo
+            top: 2, // Mover para baixo
             behavior: 'smooth' // Rolagem suave
         });
 
@@ -74,4 +74,4 @@ function autoScroll() {
 }
 
 // Chama a função de scroll automático a cada 50ms
-setInterval(autoScroll, -10);
+setInterval(autoScroll, 50);
