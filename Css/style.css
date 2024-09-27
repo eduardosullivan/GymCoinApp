@@ -8,6 +8,7 @@
     font-weight: 100;
     font-style: normal;
 
+
 }
 
 :root {
@@ -21,34 +22,79 @@
 
   body {
     background-color: var(--bg);
+
   }
 
   .container {
     display: flex ;
     justify-content: center;
+    align-items: center;
 
+
+  }
+
+  .contador {
+    background-color: var(--camp);
+    padding: 5px 30px;
+    border-radius: 10px;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    background-color: #6e6e6e;
+    border-radius: 10px;
+    padding: 0 15px 0 0;
+    color: black;
 
   }
 
   .moeda {
-    color: var(--yellow);
+    color: var(--up);
     text-align: center;
     background: linear-gradient(180deg, rgb(48, 48, 48) 0%, rgba(33,33,33,1) 100%);
-    width: 90%;
+    width: 100vw;
     height: 230px;
-    border-radius: 10px;
-    margin-top: 30px;
     margin-bottom: 30px;
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     
   }
 
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--up);
+  }
  
+  .conta {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin: 20px 0;
+
+  }
+
+
   .moedinha {
     animation: coin-flip 2s infinite ease-in-out;
     transform-style: preserve-3d;
     perspective: 1000px;
+    font-size: 50px;
+
+
   }
 
   @keyframes coin-flip {
@@ -176,19 +222,21 @@
   }
 
   .participantes {
+
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
 
-  #adriano { order: 0; }
-  #Carlos { order: 1; }
-  #Cris { order: 2; }
-  #Duda { order: 3; }
-  #Dudu { order: 4; }
-  #Polo { order: 5; }
+  #Hilquias { order: 0; }
+  #Duda { order: 1; }
+  #Dudu { order: 2; }
+  #adriano { order: 3; }
+  #Polo { order: 4; }
+  #Cris { order: 5; }
   #Geo { order: 6; }
-  #Hilquias { order: 7; }
+  #Carlos { order: 7; }
   #Jamili { order: 8; }
   #Junior { order: 9; }
   #Paloma { order: 10; }
@@ -202,15 +250,49 @@
     border-radius: 8px;
   }
 
+
+.gamb {
+  width: 100vw;
+  height: 70px;
+  background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0) 100%);
+  position: absolute;
+  z-index: 1;
+}
+
+.lindos {
+  display: inline-block;
+  animation: pop 2s infinite;
+}
+@keyframes pop {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
   .ranking {
-    background-color: #0f0f0f;
-    padding: 20px;
+    /* Estilos existentes */
+    background-color: var(--bg);
+    padding: 100px 20px 0 20px;
     border-radius: 10px;
     margin-top: 20px;
-    border: #3f3f3f solid 1px;
-
-
+    border: none;
+    margin: 0 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* Estilos para o efeito de colapso */
+    max-height: calc(100vh / 3); /* Define a altura máxima como 1/3 da viewport */
+    overflow: hidden; /* Esconde o conteúdo que excede a altura máxima */
+    transition: max-height 0.3s ease-in-out; /* Adiciona uma transição suave */
+    /* Adiciona o gradiente fixo no topo */
+ 
   }
+
+  
 
   .relogio {
     padding: 10px;
