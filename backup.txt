@@ -1,0 +1,6 @@
+ 
+              <select style="font-size: 16px;" class="inputs" name="tipo" id="tipo">
+                <option >Selecione o exercício</option>
+                <option  value="Treino">Treino</option>
+                <option  value="Cárdio">Cardio</option>
+             </select>

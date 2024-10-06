@@ -79,21 +79,88 @@ setInterval(autoScroll, 50);
 
 
 
-    // Seleciona o botão e a div com a imagem
-    const button = document.querySelector('.motiv');
-    const gifContainer = document.querySelector('.gif-container');
 
-    // Adiciona um evento de clique ao botão
-    button.addEventListener('click', function() {
-        // Exibe a div
-        gifContainer.style.display = "block";
+    document.addEventListener('DOMContentLoaded', function() {
+        const btnTreino = document.getElementById('btnTreino');
+        const btnCardio = document.getElementById('btnCardio');
+        const tipoInput = document.getElementById('tipo');
         
-        // Aguarda um pequeno intervalo para garantir que o conteúdo seja exibido antes de rolar
-        setTimeout(function() {
-            // Rola a página até o final
-            window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: 'smooth'  // Faz a rolagem suave
-            });
-        }, 100);  // Pequeno atraso para garantir que o conteúdo seja renderizado antes de rolar
+        // Função para lidar com a seleção dos botões
+        function handleSelection(button, value) {
+          // Remover a classe "selected" de ambos os botões
+          btnTreino.classList.remove('selected');
+          btnCardio.classList.remove('selected');
+          
+          // Adicionar a classe "selected" ao botão clicado
+          button.classList.add('selected');
+          
+          // Definir o valor do campo oculto
+          tipoInput.value = value;
+        }
+      
+        // Adicionar ouvintes de eventos para os botões
+        btnTreino.addEventListener('click', function() {
+          handleSelection(btnTreino, 'Treino');
+        });
+      
+        btnCardio.addEventListener('click', function() {
+          handleSelection(btnCardio, 'Cardio');
+        });
+      
+      });
+
+      
+
+
+
+          // Seleciona todos os botões
+    const buttons = document.querySelectorAll('.btn-km');
+    let selectedButton = null;
+
+    // Adiciona evento de clique em cada botão
+    buttons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão do botão
+
+            // Desmarca o botão previamente selecionado
+            if (selectedButton) {
+                selectedButton.classList.remove('selected');
+            }
+
+            // Marca o botão atual como selecionado
+            this.classList.add('selected');
+            selectedButton = this;
+
+            // Atualiza o valor do campo oculto
+            document.getElementById('selectedValue').value = this.dataset.value;
+        });
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const buttons = document.querySelectorAll('.btn-km');  // Seleciona todos os botões
+      const distanciaInput = document.getElementById('distancia');  // O input oculto
+  
+      // Função para lidar com a seleção dos botões
+      function handleSelection(button, value) {
+          // Remover a classe "selected" de todos os botões
+          buttons.forEach(btn => btn.classList.remove('selected'));
+          
+          // Adicionar a classe "selected" ao botão clicado
+          button.classList.add('selected');
+          
+          // Definir o valor do campo oculto com o data-value do botão clicado
+          distanciaInput.value = value;
+      }
+  
+      // Adicionar ouvintes de eventos para todos os botões
+      buttons.forEach(button => {
+          button.addEventListener('click', function() {
+              const value = this.getAttribute('data-value');
+              handleSelection(button, value);
+          });
+      });
+  });
+
+
+
+  

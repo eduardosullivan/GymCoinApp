@@ -15,35 +15,33 @@
 
             <div class="moeda">
                 <div class="heading">
-                    <div style="color:black; font-weight: 400;" class="contador" id="contador">0/90</div>
+                    <div style="color: rgb(103, 103, 103);; font-weight: 200;" class="contador" id="contador">0/90</div>
     
-                    <p style="font-weight:400;">ㅤDesafio dos 90 dias</p>
+                    <p style="font-weight:200;">ㅤDesafio dos 90 dias</p>
                 </div>
-               <div class="conta"> 
-                <div class="moedinha">🪙</div>
-                <h2>0,000265 📈</h2>
+               <img src="/Assets/Preço GCN atual.png" width="350px" style="margin-bottom: 30px ;" alt="">
             </div>
-            <p style="font-weight: 300;">Índice da moeda GCN esta semana!</p></div>
+            </div>
         </div>
 
+        <div class="aviso" style="color: rgb(255, 99, 99); text-align: center;">Ranking ta em reforma kkkkk</div>
 
-
-        <div class="gamb" style="text-align: center; color: white; font-weight: 200;">Ranking dos       <span class="lindos" style="font-weight: 400;"> mais lindos</span>    da semana</div>
+        <div class="gamb" style="text-align: center; color: white; font-weight: 200; display: none;">Ranking dos       <span class="lindos" style="font-weight: 400;"> mais lindos</span>    da semana</div>
 
          <!--Ranking semanal inicio-->
 
-     <div class="ranking" style="color: white;">
+     <div class="ranking" style="color: white; display: none;">
 
 
 
-        <div class="participantes"> <!-- DIV Participante-->
+        <div class="participantes" > <!-- DIV Participante-->
             <!--Participante-->
             <div " id="hilquias" class="participante">
                 <div class="position" style="font-weight: 400; ">#1</div>
                 <img src="/Assets/Avatar/hilquias.jpg" style="width: 50px; border-radius: 100%;" alt="">
                 <div class="name-box">
                     <p class="part">Hilquias Alcântara</p>
-                    <p class="gcn">🪙 0,000085 GCN</p>
+                    <p class="gcn">🪙 0.000125 GCN</p>
                 </div>
             </div>
             <!--Participante end-->
@@ -54,7 +52,7 @@
                 <img src="/Assets/Avatar/eduarda.jpg" style="width: 50px; border-radius: 100%;" alt="">
                 <div class="name-box">
                     <p class="part">Eduarda Samanta</p>
-                    <p class="gcn">🪙 0,000060 GCN</p>
+                    <p class="gcn">🪙 0,000097 GCN</p>
                 </div>
             </div>
             <!--Participante end-->
@@ -65,7 +63,7 @@
                 <img src="/Assets/Avatar/eduardo.jpg" style="width: 50px; border-radius: 100%;" alt="">
                 <div class="name-box">
                     <p class="part">Eduardo Sullivan</p>
-                    <p class="gcn">🪙 0,000055 GCN</p>
+                    <p class="gcn">🪙 0,000100 GCN</p>
                 </div>
             </div>
             <!--Participante end-->
@@ -76,14 +74,14 @@
                 <img src="/Assets/Avatar/adriano.jpg" style="width: 50px; border-radius: 100%;" alt="">
                 <div class="name-box">
                     <p class="part">Adriano Matheus</p>
-                    <p class="gcn">🪙 0,000025 GCN</p>
+                    <p class="gcn">🪙 0,000050 GCN</p>
                 </div>
             </div>
             <!--Participante end-->
         
             <!--Participante-->
             <div id="Polo" class="participante">
-                <div class="position" style="font-weight: 400; ">#5</div>
+                <div class="position" style="font-weight: 400; ">#6</div>
                 <img src="/Assets/Avatar/geo.jpg" style="width: 50px; border-radius: 100%;" alt="">
                 <div class="name-box">
                     <p class="part">Geison Soares</p>
@@ -94,7 +92,7 @@
         
             <!--Participante-->
             <div id="Cris" class="participante">
-                <div class="position" style="font-weight: 400; ">#6</div>
+                <div class="position" style="font-weight: 400; ">#5</div>
                 <img src="/Assets/Avatar/cris.jpg" style="width: 50px; border-radius: 100%;" alt="">
                 <div class="name-box">
                     <p class="part">Cristhian Maciel</p>
@@ -180,7 +178,7 @@
        
 
     <!--formulário-->
-         <form target="_blank" action="https://hook.us1.make.com/z1vg57w6d97opvuuz2q3i1ggwt3841ml">
+         <form target="_blank" method="post" action="https://hooks.zapier.com/hooks/catch/20268959/2mo51v1/">
               <!-- Campo que será automaticamente preenchido com a data -->
     
               <input  type="text" id="live-date" name="liveDate" readonly class="relogio" style="text-align: center; display: none; font-weight: 400; font-size: 16px; letter-spacing: 3px;">
@@ -188,7 +186,7 @@
            
             <label for="cars" style="margin: 20px 0">Enviar relatório de atividades:</label>
             <select style="font-size: 16px;" class="inputs" name="nomes" id="nomes">
-                <option >Nome do atleta</option>
+                <option value="ㅤ" >Nome do atleta</option>
                 <option value="adriano">Adriano</option>
                 <option value="carlos">Carlos</option>
                 <option value="cris">Cris</option>
@@ -204,53 +202,67 @@
               </select>
     
     
- 
-              <select style="font-size: 16px;" class="inputs" name="tipo" id="tipo">
-                <option >Selecione o exercício</option>
-                <option  value="Treino">Treino</option>
-                <option  value="Cárdio">Cardio</option>
-             </select>
+              <div class="button-group">
+                <button  type="button" id="btnTreino" class="select-btn" data-value="Treino">Treino</button>
+                <button  type="button" id="btnCardio" class="select-btn" data-value="Cardio">Cardio</button>
+              </div>
+              <input type="hidden" name="tipo" id="tipo">
     
             
-             <select style="font-size: 16px;" class="inputs" name="preço" id="preço">
-               <option >Selecione o tempo de treino</option>
-               <option value="0,000005">30 - 40 min = 🪙 0,000005 GCN</option>
-               <option value="0,000010">1:00 - 1:30 hrs = 🪙 0,000010 GCN</option>
-               <option value="0,000020">2:00 - 2:30 hrs = 🪙 0,000020 GCN</option>
-               <option value="0,000025">3:00 - 3:30 hrs = 🪙 0,000025 GCN</option>
-            </select>
+           <select style="font-size: 16px;" class="inputs" name="preço" id="preço">
+               <option value="0" >Selecione o tempo de treino</option>
+               <option value="5">30 - 40 min</option>
+               <option value="10">1:00 - 1:30 hrs</option>
+               <option value="20">2:00 - 2:30 hrs</option>
+               <option value="25">3:00 - 3:30 hrs</option>
+            </select> 
+
+
+
             <p style="margin-bottom: 10px;" >Distância em Km</p>
-                <div class="adicionar-km">
+               
 
-                     <input value="0" min="0" class="tempo" type="number"  id="numero" name="distancia">
-            
-                    <div class="adc-btn">
-                       
-                        <button onclick="decrementar()" type="button" class="controle" id="divMenos">-</button>
-                       
-                        <button onclick="incrementar()" type="button" class="controle" id="divMais">+</button>
+                    <div class="km">
+
+                        <div class="km-container">
+
+                            <button id="btn1" class="btn-km" data-value="2">1</button>
+                            <button id="btn2" class="btn-km" data-value="4">2</button>
+                            <button id="btn3" class="btn-km" data-value="6">3</button>
+                            <button id="btn4" class="btn-km" data-value="8">4</button>
+                            <button id="btn5" class="btn-km" data-value="10">5</button>
+                            <button id="btn6" class="btn-km" data-value="12">6</button>
+                            <button id="btn7" class="btn-km" data-value="14">7</button>
+                            <button id="btn8" class="btn-km" data-value="16">8</button>
+                            <button id="btn9" class="btn-km" data-value="18">9</button>
+                            <button id="btn10" class="btn-km" data-value="20">10</button>
+                            <button id="btn11" class="btn-km" data-value="22">11</button>
+                            <button id="btn12" class="btn-km" data-value="24">12</button>
+                            <button id="btn13" class="btn-km" data-value="26">13</button>
+                            <button id="btn14" class="btn-km" data-value="28">14</button>
+                            <button id="btn15" class="btn-km" data-value="30">15</button>
+                            <button id="btn16" class="btn-km" data-value="32">16</button>
+                            <button id="btn17" class="btn-km" data-value="34">17</button>
+                            <button id="btn18" class="btn-km" data-value="36">18</button>
+                            <button id="btn19" class="btn-km" data-value="38">19</button>
+                            <button id="btn20" class="btn-km" data-value="40">20</button>
+                            <button id="btn21" class="btn-km" data-value="42">21</button>
+                            <button id="btn22" class="btn-km" data-value="44">22</button>
+                           
+                  
+                        </div>
+                        <input type="hidden" name="distancia" id="distancia">
                     </div>
-
-                    <script>
-                        function incrementar() {
-                         const numeroInput = document.getElementById('numero');
-                          numeroInput.value = parseInt(numeroInput.value) + 1;
-                            }
-
-                    function decrementar() {
-                const numeroInput = document.getElementById('numero');
-                 numeroInput.value = parseInt(numeroInput.value) - 1;
-                        }
-                    </script>
-                </div>
     
               <button style="font-weight: 400; font-size: 15px; position: sticky; bottom: 0; margin-bottom: 70px;" class="enviar" type="submit">Adicionar Saldo</button>
 
          </form>     <!--final do formulário-->
 
         <div class="gatinho">
-            <button class="motiv">🎉 Ganhar um presente! 🎉</button>
-            <div class="gif-container" style="display: none;"><img class="gif" src="/Assets/giphy.webp" alt=""></div>
+            <a href="https://docs.google.com/spreadsheets/d/1dx2Kvt6kMZnRWcsLHm8dqjF16Ya-vitYXRFjpvTa-QA/edit?usp=sharing" target="_blank">
+                <button class="motiv">"Eu já marquei hoje?" 🤔</button>
+            </a>
+            
         </div>
 
 
