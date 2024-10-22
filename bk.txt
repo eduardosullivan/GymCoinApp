@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Assets/icon-gymgame.ico">
+    <link rel="stylesheet" href="/Css/style.css">
+    <title>GymCoin Wallet</title>
+    
+</head>
+<body>
+    <div class="container">
+
+
+
+            <div class="moeda">
+                <div class="heading">
+                    <div style="color: rgb(103, 103, 103);; font-weight: 200;" class="contador" id="contador">0/90</div>
+    
+                    <p style="font-weight:200;">ㅤDesafio dos 90 dias</p>
+                </div>
+               <img src="/Assets/Preço GCN atual.png" width="350px" style="margin-bottom: 30px ;" alt="">
+            </div>
+            </div>
+        </div>
+
+        <div class="aviso" style="color: rgb(255, 99, 99); text-align: center;">Ranking ta em reforma kkkkk</div>
+
+        <div class="gamb" style="text-align: center; color: white; font-weight: 200; display: none;">Ranking dos       <span class="lindos" style="font-weight: 400;"> mais lindos</span>    da semana</div>
+
+         <!--Ranking semanal inicio-->
+
+     <div class="ranking" style="color: white; display: none;">
+
+
+
+        <div class="participantes" > <!-- DIV Participante-->
+            <!--Participante-->
+            <div " id="hilquias" class="participante">
+                <div class="position" style="font-weight: 400; ">#1</div>
+                <img src="/Assets/Avatar/hilquias.jpg" style="width: 50px; border-radius: 100%;" alt="">
+                <div class="name-box">
+                    <p class="part">Hilquias Alcântara</p>
+                    <p class="gcn">🪙 0.000125 GCN</p>
+                </div>
+            </div>
+            <!--Participante end-->
+        
+            <!--Participante-->
+            <div id="Duda" class="participante">
+                <div class="position" style="font-weight: 400; ">#2</div>
+                <img src="/Assets/Avatar/eduarda.jpg" style="width: 50px; border-radius: 100%;" alt="">
+                <div class="name-box">
+                    <p class="part">Eduarda Samanta</p>
+                    <p class="gcn">🪙 0,000097 GCN</p>
+                </div>
+            </div>
+            <!--Participante end-->
+        
+            <!--Participante-->
+            <div id="Dudu" class="participante">
+                <div class="position" style="font-weight: 400; ">#3</div>
+                <img src="/Assets/Avatar/eduardo.jpg" style="width: 50px; border-radius: 100%;" alt="">
+                <div class="name-box">
+                    <p class="part">Eduardo Sullivan</p>
+                    <p class="gcn">🪙 0,000100 GCN</p>
+                </div>
+            </div>
+            <!--Participante end-->
+        
+            <!--Participante-->
+            <div id="adriano" class="participante">
+                <div class="position" style="font-weight: 400; ">#4</div>
+                <img src="/Assets/Avatar/adriano.jpg" style="width: 50px; border-radius: 100%;" alt="">
+                <div class="name-box">
+                    <p class="part">Adriano Matheus</p>
+                    <p class="gcn">🪙 0,000050 GCN</p>
+                </div>
+            </div>
+            <!--Participante end-->
+        
+            <!--Participante-->
+            <div id="Polo" class="participante">
+                <div class="position" style="font-weight: 400; ">#6</div>
+                <img src="/Assets/Avatar/geo.jpg" style="width: 50px; border-radius: 100%;" alt="">
+                <div class="name-box">
+                    <p class="part">Geison Soares</p>
+                    <p class="gcn">🪙 0,000015 GCN</p>
+                </div>
+            </div>
+            <!--Participante end-->
+        
+            <!--Participante-->
+            <div id="Cris" class="participante">
+                <div class="position" style="font-weight: 400; ">#5</div>
+                <img src="/Assets/Avatar/cris.jpg" style="width: 50px; border-radius: 100%;" alt="">
+                <div class="name-box">
+                    <p class="part">Cristhian Maciel</p>
+                    <p class="gcn">🪙 0,000010 GCN</p>
+                </div>
+            </div>
+            <!--Participante end-->
+        
+            <!--Participante-->
+            <div id="Geo" class="participante">
+                <div class="position" style="font-weight: 400; ">#7</div>
+                <img src="/Assets/Avatar/geo.jpg" style="width: 50px; border-radius: 100%;" alt="">
+                <div class="name-box">
+                    <p class="part">Geovana</p>
+                    <p class="gcn">🪙 0,000010 GCN</p>
+                </div>
+            </div>
+            <!--Participante end-->
+        
+            <!--Participante-->
+            <div id="Carlos" class="participante">
+                <div class="position" style="font-weight: 400; ">#8</div>
+                <img src="/Assets/Avatar/carlos.jpg" style="width: 50px; border-radius: 100%;" alt="">
+                <div class="name-box">
+                    <p class="part">Carlos Amaral</p>
+                    <p class="gcn">🪙 0,000005 GCN</p>
+                </div>
+            </div>
+            <!--Participante end-->
+        </div>
+
+
+        <!--Participante-->
+        <div id="Jamili" class="participante">
+            <div class="position" style="font-weight: 400; ">#9</div>
+            <img src="/Assets/Avatar/jamili.jpg" style="width: 50px; border-radius: 100%;" alt="">
+            <div class="name-box">
+                <p class="part">Jamili</p>
+                <p class="gcn">🪙 0,000000 GCN</p>
+            </div>
+        </div>
+        <!--Participante end-->
+
+
+        <!--Participante-->
+        <div id="Junior" class="participante">
+            <div class="position" style="font-weight: 400; ">#10</div>
+            <img src="/Assets/Avatar/junior.jpg" style="width: 50px; border-radius: 100%;" alt="">
+            <div class="name-box">
+                <p class="part">Júnior</p>
+                <p class="gcn">🪙 0,000000 GCN</p>
+            </div>
+        </div>
+        <!--Participante end-->
+
+
+        <!--Participante-->
+        <div id="Paloma" class="participante">
+            <div class="position" style="font-weight: 400; ">#11</div>
+            <img src="/Assets/Avatar/polo.jpg" style="width: 50px; border-radius: 100%;" alt="">
+            <div class="name-box">
+                <p class="part">Paloma Gomes</p>
+                <p class="gcn">🪙 0,000000 GCN</p>
+            </div>
+        </div>
+        <!--Participante end-->
+
+
+        <!--Participante-->
+        <div id="Rafa" class="participante">
+            <div class="position" style="font-weight: 400; ">#12</div>
+            <img src="/Assets/Avatar/rafa.jpg" style="width: 50px; border-radius: 100%;" alt="">
+            <div class="name-box">
+                <p class="part">Rafaela Carvalho</p>
+                <p class="gcn">🪙 0,000000 GCN</p>
+            </div>
+        </div>
+        <!--Participante end-->
+
+             </div> <!-- DIV Participante-->
+    
+    
+       
+
+    <!--formulário-->
+         <form target="_blank" method="post" action="https://hook.us1.make.com/z1vg57w6d97opvuuz2q3i1ggwt3841ml">
+              <!-- Campo que será automaticamente preenchido com a data -->
+    
+              <input  type="text" id="live-date" name="liveDate" readonly class="relogio" style="text-align: center; display: none; font-weight: 400; font-size: 16px; letter-spacing: 3px;">
+              
+           
+            <label for="cars" style="margin: 20px 0">Enviar relatório de atividades:</label>
+            <select style="font-size: 16px;" class="inputs" name="nomes" id="nomes">
+                <option value="ㅤ" >Nome do atleta</option>
+                <option value="adriano">Adriano</option>
+                <option value="carlos">Carlos</option>
+                <option value="cris">Cris</option>
+                <option value="eduarda">Eduarda</option>
+                <option value="eduardo">Eduardo</option>
+                <option value="geison">Geison</option>
+                <option value="geovana">Geovana</option>
+                <option value="hilquias">Hilquias</option>
+                <option value="jamili">Jamili</option>
+                <option value="junior">Junior</option>
+                <option value="paloma">Paloma</option>
+                <option value="rafaela">Rafaela</option>
+                <option value="teste">teste</option>
+              </select>
+    
+    
+              <div class="button-group">
+                <button  type="button" id="btnTreino" class="select-btn" data-value="Treino">Treino</button>
+                <button  type="button" id="btnCardio" class="select-btn" data-value="Cardio">Cardio</button>
+              </div>
+              <input type="hidden" name="tipo" id="tipo">
+    
+            
+           <select style="font-size: 16px;" class="inputs" name="preço" id="preço">
+               <option value="0" >Selecione o tempo de treino</option>
+               <option value="5">30 - 40 min</option>
+               <option value="10">1:00 - 1:30 hrs</option>
+               <option value="20">2:00 - 2:30 hrs</option>
+               <option value="25">3:00 - 3:30 hrs</option>
+            </select> 
+
+
+
+            <p style="margin-bottom: 10px;" >Distância em Km</p>
+               
+
+                    <div class="km">
+
+                        <div class="km-container">
+
+                            <button id="btn1" class="btn-km" data-value="2">1</button>
+                            <button id="btn2" class="btn-km" data-value="4">2</button>
+                            <button id="btn3" class="btn-km" data-value="6">3</button>
+                            <button id="btn4" class="btn-km" data-value="8">4</button>
+                            <button id="btn5" class="btn-km" data-value="10">5</button>
+                            <button id="btn6" class="btn-km" data-value="12">6</button>
+                            <button id="btn7" class="btn-km" data-value="14">7</button>
+                            <button id="btn8" class="btn-km" data-value="16">8</button>
+                            <button id="btn9" class="btn-km" data-value="18">9</button>
+                            <button id="btn10" class="btn-km" data-value="20">10</button>
+                            <button id="btn11" class="btn-km" data-value="22">11</button>
+                            <button id="btn12" class="btn-km" data-value="24">12</button>
+                            <button id="btn13" class="btn-km" data-value="26">13</button>
+                            <button id="btn14" class="btn-km" data-value="28">14</button>
+                            <button id="btn15" class="btn-km" data-value="30">15</button>
+                            <button id="btn16" class="btn-km" data-value="32">16</button>
+                            <button id="btn17" class="btn-km" data-value="34">17</button>
+                            <button id="btn18" class="btn-km" data-value="36">18</button>
+                            <button id="btn19" class="btn-km" data-value="38">19</button>
+                            <button id="btn20" class="btn-km" data-value="40">20</button>
+                            <button id="btn21" class="btn-km" data-value="42">21</button>
+                            <button id="btn22" class="btn-km" data-value="44">22</button>
+                           
+                  
+                        </div>
+                        <input type="hidden" name="distancia" id="distancia">
+                    </div>
+    
+              <button style="font-weight: 400; font-size: 15px; position: sticky; bottom: 0; margin-bottom: 70px;" class="enviar" type="submit">Adicionar Saldo</button>
+
+         </form>     <!--final do formulário-->
+
+        <div class="gatinho">
+            <a href="https://docs.google.com/spreadsheets/d/1dx2Kvt6kMZnRWcsLHm8dqjF16Ya-vitYXRFjpvTa-QA/edit?usp=sharing" target="_blank">
+                <button class="motiv">"Eu já marquei hoje?" 🤔</button>
+            </a>
+            
+        </div>
+
+
+
+
+     </div>
+
+   
+
+    <script src="/Js/script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif, 'Noto Color Emoji', 'Apple Color Emoji';
+    font-weight: 100;
+    font-style: normal;
+
+
+}
+
+:root {
+    --bg: #212121;
+    --fields: #181818;
+    --camp: #999999;
+    --yellow: #f1ff31;
+    --up: #23CF5E;
+    --down: #FB3636;
+    
+  }
+
+  body {
+    background-color: black;
+
+  }
+
+  .container {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .contador {
+
+    padding: 5px 0px;
+    border-radius: 10px;
+
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: absolute;
+    border-radius: 10px;
+    font-weight: 200;
+    color: rgb(103, 103, 103);
+
+  }
+
+  .moeda {
+    color: var(--up);
+    text-align: center;
+    background-color: #000000;
+    width: 100vw;
+    height: 230px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--up);
+  }
+ 
+  .conta {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin: 20px 0;
+
+  }
+
+
+  .moedinha {
+    animation: coin-flip 2s infinite ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    font-size: 50px;
+
+
+  }
+
+  @keyframes coin-flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+  .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+  }
+
+
+
+  .valor {
+    background-color: var(--camp);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+
+  }
+
+  .inputs {
+    color: white;
+
+    background-color: var(--fields);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    color: var(--yellow);
+    align-items: center;
+  }
+
+  .fundos {
+    background-color: var(--down);
+    padding: 10px;
+    width: 360px;
+    border-radius: 10px;
+    border: solid 1px #181818;
+
+  }
+
+  .enviar {
+    background-color: var(--yellow);
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    transition: 0.3s;
+  }
+
+  .enviar:hover {
+    background-color: var(--up);
+    color: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+
+  }
+
+
+  .button-group{
+    display: flex;
+    gap: 5px;
+
+  }
+
+
+  .select-btn {
+    padding: 17px;
+    width: 170px;
+    margin: 10px 0 20px 0 ;
+    background-color: #161616;
+    border: solid 1px rgb(128, 128, 128);
+    border-radius: 10px;
+    color: white;
+    font-weight: 300;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+   }
+
+  .select-btn.selected {
+    padding: 17px;
+    width: 170px;
+    margin-bottom: 20px;
+    background-color: #333115;
+    border: solid 1px rgb(108, 122, 27);
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+  }
+
+
+
+
+
+  .motiv {
+      background-color: var(--bg);
+      border: none;
+      padding: 20px;
+      color: var(--yellow);
+      font-weight: 200;
+      border-radius: 10px;
+      width: 350px;
+      font-size: 15px;
+      cursor: pointer;
+  }
+
+  .motiv:hover {
+    background-color: #3b3b3b;
+  }
+.gatinho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.gif {
+  border-radius: 10px;
+  width: 350px;
+  margin-top: 10px;
+}
+
+  .adicionar-km {
+    display: flex;
+    gap: 5px;
+
+  }
+
+  .controle {
+    padding: 2px 19px;
+    background-color: var(--fields);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 200;
+  }
+
+  .controle:active {
+    background-color: #6e6e6e;
+    cursor: pointer;
+  }
+
+  .tempo {
+    background-color: var(--fields);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 240px;
+    color: var(--yellow);
+    font-weight: 400;
+    border: none;
+  }
+
+  .participante {
+    display: flex;
+    background-color: rgb(17, 17, 0);
+    border-radius: 10px;
+    width: 350px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--yellow);
+   
+
+  }
+
+  .participantes {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  #Hilquias { order: 0; }
+  #Duda { order: 1; }
+  #Dudu { order: 2; }
+  #adriano { order: 3; }
+  #Polo { order: 6; }
+  #Cris { order: 4; }
+  #Geo { order: 6; }
+  #Carlos { order: 7; }
+  #Jamili { order: 8; }
+  #Junior { order: 3; }
+  #Paloma { order: 10; }
+  #Rafa { order: 11; }
+
+  .gcn {
+    background-color: #000000;
+    padding: 4px 10px;
+    color: var(--yellow);
+    font-weight: 400;
+    border-radius: 8px;
+  }
+
+
+.gamb {
+  width: 100vw;
+  height: 70px;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  z-index: 1;
+}
+
+.lindos {
+  display: inline-block;
+  animation: pop 2s infinite;
+  color: #f1ff31;
+}
+@keyframes pop {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
+  .ranking {
+    /* Estilos existentes */
+    background-color: black;
+    padding: 100px 20px 0 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    margin: 0 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* Estilos para o efeito de colapso */
+    max-height: calc(100vh / 3); /* Define a altura máxima como 1/3 da viewport */
+    overflow: hidden; /* Esconde o conteúdo que excede a altura máxima */
+    transition: max-height 0.3s ease-in-out; /* Adiciona uma transição suave */
+    /* Adiciona o gradiente fixo no topo */
+ 
+  }
+
+  
+
+  .relogio {
+    padding: 10px;
+    background-color: var(--bg);
+    border: solid 1px #3d3d3d;
+    color: #FBFF31;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 360px;
+  }
+
+
+  .btn-km {
+    width: 50px;
+    height: 50px;
+    background-color: #161616;
+    border: solid 1px rgb(128, 128, 128);
+    color: white;
+    border-radius: 5px;
+  }
+
+  .btn-km.selected {
+    width: 50px;
+    height: 50px;
+    background-color: #333115;
+    border: solid 1px rgb(108, 122, 27);
+    color: white;
+    border-radius: 5px;
+  }
+
+  .km-container {
+    width: 340px;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+   
+  }
+
+  .km {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .tempo-t {
+  display: flex;
+  flex-direction: column;
+ }
+
+
+ .treinotempo {
+  padding: 17px;
+  width: 83px;
+  margin: 10px 0 20px 0 ;
+  background-color: #161616;
+  border: solid 1px rgb(128, 128, 128);
+  border-radius: 10px;
+  color: white;
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+ }
+
+ .treinotempo.selected {
+  padding: 17px;
+  width: 83px;
+  margin: 10px 0 20px 0 ;
+  background-color: #333115;
+  border: solid 1px rgb(108, 122, 27);
+  border-radius: 10px;
+  color: white;
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+ }
+
+ 
